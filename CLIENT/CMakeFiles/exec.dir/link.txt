@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/exec.dir/example.cpp.o CMakeFiles/exec.dir/create.cpp.o CMakeFiles/exec.dir/insert.cpp.o CMakeFiles/exec.dir/deletes.cpp.o CMakeFiles/exec.dir/query.cpp.o CMakeFiles/exec.dir/sum.cpp.o CMakeFiles/exec.dir/multiply.cpp.o -o newdir/exec  /usr/local/lib/libseal-3.6.a -pthread 
