@@ -1,4 +1,5 @@
 #include "admin.h"
+#include "certs.cpp"
 
 using namespace std;
 

@@ -15,6 +15,7 @@
 #include <string>
 #include <thread>
 #include <vector>
+#include <string.h>
 
 
     void create_root_CA();
