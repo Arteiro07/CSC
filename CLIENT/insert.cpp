@@ -7,40 +7,29 @@ void insert( )
 {
 
 ///////////////////////////////////////////////////////////////////////////////////////////SEAL///////////////////////////////////////////////////////////////////////////////////////////
-    EncryptionParameters parms(scheme_type::bfv);
-    size_t poly_modulus_degree = 8192;
+	EncryptionParameters parms(scheme_type::bfv);
+    size_t poly_modulus_degree = 4096;
     parms.set_poly_modulus_degree(poly_modulus_degree);
+//
     parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-    //
-    parms.set_plain_modulus(PlainModulus::Batching(poly_modulus_degree, 20));
-
-    SEALContext context(parms);
-
-    auto qualifiers = context.first_context_data()->qualifiers();
-
-    KeyGenerator keygen(context);
+	parms.set_plain_modulus(1024);
+	SEALContext context(parms);
+//
+	KeyGenerator keygen(context);
     SecretKey secret_key = keygen.secret_key();
     PublicKey public_key;
     keygen.create_public_key(public_key);
-    RelinKeys relin_keys;
-    keygen.create_relin_keys(relin_keys);
+//
     Encryptor encryptor(context, public_key);
-    Evaluator evaluator(context);
-    Decryptor decryptor(context, secret_key);
 
-    BatchEncoder batch_encoder(context);
-
-    size_t slot_count = batch_encoder.slot_count();
-    size_t row_size = slot_count / 2;
-    cout << "Plaintext matrix row size: " << row_size << endl;
-
-    vector<uint64_t> pod_result;
-    vector<uint64_t> pod_matrix(slot_count, 0ULL);
-    Plaintext plain_matrix;
-
+//
+	Ciphertext encrypted_query_0;
+    Ciphertext encrypted_query_1;
+    Ciphertext encrypted_query_2;
+    Ciphertext encrypted_query_3;
+    Ciphertext encrypted_query_4;
 ///////////////////////////////////////////////////////////////////////////////////////////SEAL///////////////////////////////////////////////////////////////////////////////////////////
    	
-
     string tablename;
  
     string mode;
@@ -48,17 +37,14 @@ void insert( )
 
     int n;
 
-    char op_1;
-    char op_2;
-
     cout<<"Insert tablename"<<endl;
     cin>>tablename;
 
-    cout<<"Number of columns?";
+    cout<<"Number of columns? (max of 5)";
     cin>>n;
 
     string name[n];
-    int value[n];
+    string value[n];
 
 ///// Condition 1
     for(int i = 0; i<n; i++)
@@ -86,31 +72,118 @@ void insert( )
     }
     cout<<')'<<endl;;
 
-//
-    for(int i = 0; i<n; i++)
+    for(int i=0; i<5; i++)
     {
-        pod_matrix[i] = value[i];
-    }
-    batch_encoder.encode(pod_matrix, plain_matrix);
-    Ciphertext encrypted_matrix;
-    encryptor.encrypt(plain_matrix, encrypted_matrix);
+        if(i >= n)
+        {   cout<<"dsasda";
+            value[i]= to_string(6);
+        }
+        
+    }    
+    cout<<"dsa";
 
+        Plaintext p_query_0((value[0]));//plaintext query
+	    Plaintext p_query_1((value[1]));
+        Plaintext p_query_2((value[2]));
+        Plaintext p_query_3((value[3]));
+        Plaintext p_query_4((value[4]));
+ 
+	if(n==1)
+    {
+        encryptor.encrypt(p_query_0, encrypted_query_0);    
+    }
+    else if(n==2)
+    {
+        encryptor.encrypt(p_query_0, encrypted_query_0);
+        encryptor.encrypt(p_query_1, encrypted_query_1);
+    }
+    else if(n==3)
+    {
+        encryptor.encrypt(p_query_0, encrypted_query_0);
+        encryptor.encrypt(p_query_1, encrypted_query_1);
+        encryptor.encrypt(p_query_2, encrypted_query_2);    
+    }
+    else if(n==4)
+    {
+        encryptor.encrypt(p_query_0, encrypted_query_0);
+        encryptor.encrypt(p_query_1, encrypted_query_1);
+        encryptor.encrypt(p_query_2, encrypted_query_2); 
+        encryptor.encrypt(p_query_1, encrypted_query_3);
+   
+    }
+    else if(n==5)
+    {
+        encryptor.encrypt(p_query_0, encrypted_query_0);
+        encryptor.encrypt(p_query_1, encrypted_query_1);
+        encryptor.encrypt(p_query_2, encrypted_query_2); 
+        encryptor.encrypt(p_query_3, encrypted_query_3);
+	    encryptor.encrypt(p_query_4, encrypted_query_4);   
+    }
 
     cout<<"ecrypted"<<endl;	
 
     ////////////////////////////////////////////////////////////////////Write to file////////////////////////////////////////////////////////////////////
 
-//    ofstream myfile;
-//    myfile.open ("encrypt/encrypted.txt");
-//
-//    myfile<<"SELECT "<<name_1<<" FROM "<<tablename<<" WHERE "<<name_1<<" "<<op_1<<" "<<"value_1"<<" "<<mode<<" "<<name_2<<" "<<op_2<<" "<<"value_2"<<endl;
-//
-//    encrypted_query_1.save(myfile);
-//    encrypted_query_2.save(myfile);
-//
-//    myfile.close();
-//
-//	cout<<"ecrypted and saved to file"<<endl;	
-//
-//    ////////////////////////////////////////////////////////////////////Write to file////////////////////////////////////////////////////////////////////
+    ofstream myfile;
+    myfile.open ("encrypt/encrypted.txt");
+
+    myfile<<"INSERT INTO "<<tablename<<"(";
+    
+    for(int i =0; i<n; i++)
+    {
+        myfile<< name[i];
+        if (i<n-1)
+        {
+            myfile << ",";
+        }
+    }
+    myfile<<") VALUES (";
+	if(n==1)
+    {
+          encrypted_query_0.save(myfile); 
+    }
+    else if(n==2)
+    {
+        encrypted_query_0.save(myfile);
+        myfile<<",";
+        encrypted_query_1.save(myfile);
+    }
+    else if(n==3)
+    {
+        encrypted_query_0.save(myfile);
+        myfile<<",";
+        encrypted_query_1.save(myfile);
+        myfile<<",";
+        encrypted_query_2.save(myfile);
+    }
+    else if(n==4)
+    {
+        encrypted_query_0.save(myfile);
+        myfile<<",";
+        encrypted_query_1.save(myfile);
+        myfile<<",";
+        encrypted_query_2.save(myfile);
+        myfile<<",";
+        encrypted_query_3.save(myfile);   
+    }
+    else if(n==5)
+    {
+        encrypted_query_0.save(myfile);
+        myfile<<",";
+        encrypted_query_1.save(myfile);
+        myfile<<",";
+        encrypted_query_2.save(myfile);
+        myfile<<",";
+        encrypted_query_3.save(myfile);  
+        myfile<<",";
+        encrypted_query_4.save(myfile);         
+    }
+
+    myfile<<")";
+    
+    myfile.close();
+
+	cout<<"ecrypted and saved to file"<<endl;	
+
+
 }

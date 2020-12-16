@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/user/Proj/create.cpp" "/home/user/Proj/CMakeFiles/exec.dir/create.cpp.o"
-  "/home/user/Proj/deletes.cpp" "/home/user/Proj/CMakeFiles/exec.dir/deletes.cpp.o"
-  "/home/user/Proj/example.cpp" "/home/user/Proj/CMakeFiles/exec.dir/example.cpp.o"
-  "/home/user/Proj/insert.cpp" "/home/user/Proj/CMakeFiles/exec.dir/insert.cpp.o"
-  "/home/user/Proj/multiply.cpp" "/home/user/Proj/CMakeFiles/exec.dir/multiply.cpp.o"
-  "/home/user/Proj/query.cpp" "/home/user/Proj/CMakeFiles/exec.dir/query.cpp.o"
-  "/home/user/Proj/sum.cpp" "/home/user/Proj/CMakeFiles/exec.dir/sum.cpp.o"
+  "/home/user/CSC/CLIENT/create.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/create.cpp.o"
+  "/home/user/CSC/CLIENT/deletes.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/deletes.cpp.o"
+  "/home/user/CSC/CLIENT/example.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/example.cpp.o"
+  "/home/user/CSC/CLIENT/insert.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/insert.cpp.o"
+  "/home/user/CSC/CLIENT/multiply.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/multiply.cpp.o"
+  "/home/user/CSC/CLIENT/query.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/query.cpp.o"
+  "/home/user/CSC/CLIENT/sum.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/sum.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

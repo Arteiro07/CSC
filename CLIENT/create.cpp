@@ -25,15 +25,20 @@ void create()
     {
         cout<<"Insert column name"<<endl;
                 getline(cin >> std::ws, name[i]);
-        cout<<"Insert column type, 1 for int, 2 for text"<<endl;
-        cin>>type[i];
     }
 
     cout<<"CREATE TABLE "<<tablename<<" (";
+    myfile<<"CREATE TABLE "<<tablename<<" (";
     for(int i=0; i<n; i++)
     {
-        cout<<name[i]<<" "<<type[i]<<", ";
+        cout<<name[i]<<" "<<"INT";
+        myfile<<name[i]<<" "<<"INT";
+        if( i<(n-1))
+        {
+            cout<<",";
+            myfile<<",";
+        }
     }
     cout<<")";
-
+    myfile<<")";
 }

@@ -63,10 +63,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Proj
+CMAKE_SOURCE_DIR = /home/user/CSC/CLIENT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Proj
+CMAKE_BINARY_DIR = /home/user/CSC/CLIENT
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/exec.dir/clean
 CMakeFiles/exec.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/Proj/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target exec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target exec"
 .PHONY : CMakeFiles/exec.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Proj/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CSC/CLIENT/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exec.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Proj/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CSC/CLIENT/CMakeFiles 0
 .PHONY : CMakeFiles/exec.dir/rule
 
 # Convenience name for target.

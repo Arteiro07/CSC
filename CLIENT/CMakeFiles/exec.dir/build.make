@@ -62,10 +62,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Proj
+CMAKE_SOURCE_DIR = /home/user/CSC/CLIENT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Proj
+CMAKE_BINARY_DIR = /home/user/CSC/CLIENT
 
 # Include any dependencies generated for this target.
 include CMakeFiles/exec.dir/depend.make
@@ -78,94 +78,94 @@ include CMakeFiles/exec.dir/flags.make
 
 CMakeFiles/exec.dir/example.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/example.cpp.o: example.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Proj/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exec.dir/example.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/example.cpp.o -c /home/user/Proj/example.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exec.dir/example.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/example.cpp.o -c /home/user/CSC/CLIENT/example.cpp
 
 CMakeFiles/exec.dir/example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/example.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Proj/example.cpp > CMakeFiles/exec.dir/example.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/CSC/CLIENT/example.cpp > CMakeFiles/exec.dir/example.cpp.i
 
 CMakeFiles/exec.dir/example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/example.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Proj/example.cpp -o CMakeFiles/exec.dir/example.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/CSC/CLIENT/example.cpp -o CMakeFiles/exec.dir/example.cpp.s
 
 CMakeFiles/exec.dir/create.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/create.cpp.o: create.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Proj/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exec.dir/create.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/create.cpp.o -c /home/user/Proj/create.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exec.dir/create.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/create.cpp.o -c /home/user/CSC/CLIENT/create.cpp
 
 CMakeFiles/exec.dir/create.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/create.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Proj/create.cpp > CMakeFiles/exec.dir/create.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/CSC/CLIENT/create.cpp > CMakeFiles/exec.dir/create.cpp.i
 
 CMakeFiles/exec.dir/create.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/create.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Proj/create.cpp -o CMakeFiles/exec.dir/create.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/CSC/CLIENT/create.cpp -o CMakeFiles/exec.dir/create.cpp.s
 
 CMakeFiles/exec.dir/insert.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/insert.cpp.o: insert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Proj/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exec.dir/insert.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/insert.cpp.o -c /home/user/Proj/insert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exec.dir/insert.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/insert.cpp.o -c /home/user/CSC/CLIENT/insert.cpp
 
 CMakeFiles/exec.dir/insert.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/insert.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Proj/insert.cpp > CMakeFiles/exec.dir/insert.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/CSC/CLIENT/insert.cpp > CMakeFiles/exec.dir/insert.cpp.i
 
 CMakeFiles/exec.dir/insert.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/insert.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Proj/insert.cpp -o CMakeFiles/exec.dir/insert.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/CSC/CLIENT/insert.cpp -o CMakeFiles/exec.dir/insert.cpp.s
 
 CMakeFiles/exec.dir/deletes.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/deletes.cpp.o: deletes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Proj/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exec.dir/deletes.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/deletes.cpp.o -c /home/user/Proj/deletes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exec.dir/deletes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/deletes.cpp.o -c /home/user/CSC/CLIENT/deletes.cpp
 
 CMakeFiles/exec.dir/deletes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/deletes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Proj/deletes.cpp > CMakeFiles/exec.dir/deletes.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/CSC/CLIENT/deletes.cpp > CMakeFiles/exec.dir/deletes.cpp.i
 
 CMakeFiles/exec.dir/deletes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/deletes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Proj/deletes.cpp -o CMakeFiles/exec.dir/deletes.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/CSC/CLIENT/deletes.cpp -o CMakeFiles/exec.dir/deletes.cpp.s
 
 CMakeFiles/exec.dir/query.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/query.cpp.o: query.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Proj/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exec.dir/query.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/query.cpp.o -c /home/user/Proj/query.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exec.dir/query.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/query.cpp.o -c /home/user/CSC/CLIENT/query.cpp
 
 CMakeFiles/exec.dir/query.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/query.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Proj/query.cpp > CMakeFiles/exec.dir/query.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/CSC/CLIENT/query.cpp > CMakeFiles/exec.dir/query.cpp.i
 
 CMakeFiles/exec.dir/query.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/query.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Proj/query.cpp -o CMakeFiles/exec.dir/query.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/CSC/CLIENT/query.cpp -o CMakeFiles/exec.dir/query.cpp.s
 
 CMakeFiles/exec.dir/sum.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/sum.cpp.o: sum.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Proj/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exec.dir/sum.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/sum.cpp.o -c /home/user/Proj/sum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exec.dir/sum.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/sum.cpp.o -c /home/user/CSC/CLIENT/sum.cpp
 
 CMakeFiles/exec.dir/sum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/sum.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Proj/sum.cpp > CMakeFiles/exec.dir/sum.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/CSC/CLIENT/sum.cpp > CMakeFiles/exec.dir/sum.cpp.i
 
 CMakeFiles/exec.dir/sum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/sum.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Proj/sum.cpp -o CMakeFiles/exec.dir/sum.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/CSC/CLIENT/sum.cpp -o CMakeFiles/exec.dir/sum.cpp.s
 
 CMakeFiles/exec.dir/multiply.cpp.o: CMakeFiles/exec.dir/flags.make
 CMakeFiles/exec.dir/multiply.cpp.o: multiply.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Proj/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exec.dir/multiply.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/multiply.cpp.o -c /home/user/Proj/multiply.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exec.dir/multiply.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exec.dir/multiply.cpp.o -c /home/user/CSC/CLIENT/multiply.cpp
 
 CMakeFiles/exec.dir/multiply.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exec.dir/multiply.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Proj/multiply.cpp > CMakeFiles/exec.dir/multiply.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/CSC/CLIENT/multiply.cpp > CMakeFiles/exec.dir/multiply.cpp.i
 
 CMakeFiles/exec.dir/multiply.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exec.dir/multiply.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Proj/multiply.cpp -o CMakeFiles/exec.dir/multiply.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/CSC/CLIENT/multiply.cpp -o CMakeFiles/exec.dir/multiply.cpp.s
 
 # Object files for target exec
 exec_OBJECTS = \
@@ -190,7 +190,7 @@ newdir/exec: CMakeFiles/exec.dir/multiply.cpp.o
 newdir/exec: CMakeFiles/exec.dir/build.make
 newdir/exec: /usr/local/lib/libseal-3.6.a
 newdir/exec: CMakeFiles/exec.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Proj/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable newdir/exec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable newdir/exec"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exec.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -203,6 +203,6 @@ CMakeFiles/exec.dir/clean:
 .PHONY : CMakeFiles/exec.dir/clean
 
 CMakeFiles/exec.dir/depend:
-	cd /home/user/Proj && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Proj /home/user/Proj /home/user/Proj /home/user/Proj /home/user/Proj/CMakeFiles/exec.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/CSC/CLIENT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/CSC/CLIENT /home/user/CSC/CLIENT /home/user/CSC/CLIENT /home/user/CSC/CLIENT /home/user/CSC/CLIENT/CMakeFiles/exec.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/exec.dir/depend
 

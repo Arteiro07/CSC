@@ -6,13 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/user/Proj/deletes.cpp
-example.h
-/home/user/Proj/example.h
-
-/home/user/Proj/example.h
+/home/user/CSC/CLIENT/example.h
 seal/seal.h
-/home/user/Proj/seal/seal.h
+/home/user/CSC/CLIENT/seal/seal.h
 algorithm
 -
 chrono
@@ -44,13 +40,9 @@ thread
 vector
 -
 
-/home/user/Proj/insert.cpp
+/home/user/CSC/CLIENT/insert.cpp
 example.h
-/home/user/Proj/example.h
-
-/home/user/Proj/sum.cpp
-example.h
-/home/user/Proj/example.h
+/home/user/CSC/CLIENT/example.h
 
 /usr/local/include/SEAL-3.6/gsl/gsl_assert
 intrin.h

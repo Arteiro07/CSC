@@ -61,7 +61,7 @@ void sum( )
 
     cout<<"Operation: = < > "<<endl;
     cin>>op_2;
-
+    
     cout<<"Value2"<<endl;
     cin>>value_2;
 
@@ -83,9 +83,12 @@ void sum( )
     ofstream myfile;
   	myfile.open ("encrypt/encrypted.txt");
 
-    myfile<<"SELECT SUM "<<name_1<<" FROM "<<tablename<<" WHERE "<<name_1<<" "<<op_1<<" "<<"value_1"<<" "<<mode<<" "<<name_2<<" "<<op_2<<" "<<"value_2"<<endl;
+    myfile<<"SELECT SUM ("<<name_1<<") FROM "<<tablename<<" WHERE "<<name_1<<" "<<op_1<<" ";
 
     encrypted_query_1.save(myfile);
+
+    myfile<<" "<<mode<<" "<<name_2<<" "<<op_2<<" ";
+
     encrypted_query_2.save(myfile);
 //
     myfile.close();
