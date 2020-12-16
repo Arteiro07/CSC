@@ -22,4 +22,6 @@
 
     void client_CA(int n);
     
-    void database_CA();
+    void server_CA();
+    
+    void client_Install();

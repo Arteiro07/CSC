@@ -1,5 +1,6 @@
 #include "admin.h"
 #include "certs.cpp"
+#include "sealops.cpp"
 
 using namespace std;
 
@@ -12,6 +13,7 @@ int main(int argc, char *argv[]){
 
     create_root_CA();
     client_CA(stoi(argv[1]));
-   // database_CA();
-
+    server_CA();
+    generate_database_keys();
+    client_Install(stoi(argv[1]));
 }
