@@ -82,6 +82,7 @@ void sum( )
 
     ofstream myfile;
   	myfile.open ("encrypt/encrypted.txt");
+      
 
     myfile<<"SELECT SUM ("<<name_1<<") FROM "<<tablename<<" WHERE "<<name_1<<" "<<op_1<<" ";
 
