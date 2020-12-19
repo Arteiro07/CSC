@@ -21,14 +21,14 @@ void create();
 
 void insert();
 
-void deletes();
-
 void query();
 
 void sum();
 
-void multiply();
+void server_decrypt();
 
-void verify_client_cert();
+void sign();
 
-void verify_server_cert();
+void server_encrypt();
+
+void send();

@@ -19,7 +19,7 @@
 cmake_minimum_required(VERSION 3.12) 
 
 # PROJECT NAME [OPTIONAL]:
-project(EXAMPLE)
+project(CLIENT)
 
 # FIND SEAL VERSION:
 find_package(SEAL 3.6.0 EXACT REQUIRED)
@@ -34,13 +34,11 @@ add_executable(exec)
 # ADD ALL SOURCE FILES TO BE COMPILED (e.g. exec.cpp)
 target_sources(exec 
         PRIVATE
-            ${CMAKE_CURRENT_LIST_DIR}/example.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/client.cpp
             ${CMAKE_CURRENT_LIST_DIR}/create.cpp
             ${CMAKE_CURRENT_LIST_DIR}/insert.cpp
-            ${CMAKE_CURRENT_LIST_DIR}/deletes.cpp
             ${CMAKE_CURRENT_LIST_DIR}/query.cpp
             ${CMAKE_CURRENT_LIST_DIR}/sum.cpp
-            ${CMAKE_CURRENT_LIST_DIR}/multiply.cpp
     	)
 
 # PRIVATE FLAG MAY BE CHANGED FOR PUBLIC OR INTERFACE

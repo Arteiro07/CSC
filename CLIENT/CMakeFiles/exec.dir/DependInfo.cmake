@@ -4,11 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/user/CSC/CLIENT/client.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/client.cpp.o"
   "/home/user/CSC/CLIENT/create.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/create.cpp.o"
-  "/home/user/CSC/CLIENT/deletes.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/deletes.cpp.o"
-  "/home/user/CSC/CLIENT/example.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/example.cpp.o"
   "/home/user/CSC/CLIENT/insert.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/insert.cpp.o"
-  "/home/user/CSC/CLIENT/multiply.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/multiply.cpp.o"
   "/home/user/CSC/CLIENT/query.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/query.cpp.o"
   "/home/user/CSC/CLIENT/sum.cpp" "/home/user/CSC/CLIENT/CMakeFiles/exec.dir/sum.cpp.o"
   )

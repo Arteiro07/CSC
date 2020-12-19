@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/exec.dir/client.cpp.o"
   "CMakeFiles/exec.dir/create.cpp.o"
-  "CMakeFiles/exec.dir/deletes.cpp.o"
-  "CMakeFiles/exec.dir/example.cpp.o"
   "CMakeFiles/exec.dir/insert.cpp.o"
-  "CMakeFiles/exec.dir/multiply.cpp.o"
   "CMakeFiles/exec.dir/query.cpp.o"
   "CMakeFiles/exec.dir/sum.cpp.o"
   "newdir/exec"

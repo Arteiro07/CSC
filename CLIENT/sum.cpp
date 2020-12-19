@@ -32,6 +32,7 @@ void sum( )
     string mode;
     string name_1;
     string name_2;
+    string name;
 
     char op_1;
     char op_2;
@@ -39,6 +40,8 @@ void sum( )
     cout<<"Insert tablename"<<endl;
     cin>>tablename;
 
+    cout<<"Insert name of column to sum over"<<endl;
+    cin>>name;
 ///// Condition 1
 
     cout<<"Operation: = < > "<<endl;
@@ -76,7 +79,7 @@ void sum( )
 	
     encryptor.encrypt(p_query_1, encrypted_query_1);
     encryptor.encrypt(p_query_2, encrypted_query_2);
-	cout<<"ecrypted"<<endl;	
+	cout<<"encrypted"<<endl;	
 
 ////////////////////////////////////////////////////////////////////Write to file////////////////////////////////////////////////////////////////////
 
@@ -84,15 +87,20 @@ void sum( )
   	myfile.open ("encrypt/encrypted.txt");
       
 
-    myfile<<"SELECT SUM ("<<name_1<<") FROM "<<tablename<<" WHERE "<<name_1<<" "<<op_1<<" ";
-
-    encrypted_query_1.save(myfile);
-
-    myfile<<" "<<mode<<" "<<name_2<<" "<<op_2<<" ";
-
-    encrypted_query_2.save(myfile);
-//
+    myfile<<"4 "<<tablename<<" "<< name<< " " <<name_1<<" "<<op_1<<" "<<name_2<<" "<<mode<<" "<<name_2<<" "<<op_2;
+    
     myfile.close();
+
+    ofstream value1;
+  	value1.open ("encrypt/value1.txt");
+    encrypted_query_1.save(value1);
+    value1.close();
+    
+    
+    ofstream value2;
+  	value1.open ("encrypt/value2.txt");
+    encrypted_query_2.save(value2);
+    value2.close();
 
 	cout<<"ecrypted and saved to file"<<endl;	
 

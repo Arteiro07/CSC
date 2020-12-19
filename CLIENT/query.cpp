@@ -34,19 +34,30 @@ void query( )
     string name_1;
     string name_2;
 
+    int n;
+
     char op_1;
     char op_2;
 
     cout<<"Insert tablename"<<endl;
     cin>>tablename;
-
+    cout<<"Number of columns?"<<endl;
+    cin>>n;
+    
+    string name[n];
+    
+    for(int i=0; i<n; i++)
+    {
+        cout<<"Insert column name"<<endl;
+        getline(cin >> std::ws, name[i]);
+    }
 
     cout<<"Operation: = < > "<<endl;
     cin>>op_1;
     
-    cout<<"Column 1 name:"<<endl;
+    cout<<"Primeira Coluna"<<endl;
     cin>>name_1;
-    
+
     cout<<"Value1:"<<endl;
     cin>>value_1;
 
@@ -55,7 +66,7 @@ void query( )
     cin>>mode;
 
 
-    cout<<"Column 2 name:"<<endl;
+    cout<<"Segunda Coluna"<<endl;
     cin>>name_2;
 
     cout<<"Operation: = < > "<<endl;
@@ -76,7 +87,7 @@ void query( )
 	
     encryptor.encrypt(p_query_1, encrypted_query_1);
     encryptor.encrypt(p_query_2, encrypted_query_2);
-	cout<<"ecrypted"<<endl;	
+	cout<<"encrypted"<<endl;	
 
 
 ////////////////////////////////////////////////////////////////////Write to file////////////////////////////////////////////////////////////////////
@@ -84,12 +95,28 @@ void query( )
     ofstream myfile;
   	myfile.open ("encrypt/encrypted.txt");
 
-    myfile<<"SELECT "<<name_1<<" FROM "<<tablename<<" WHERE "<<name_1<<" "<<op_1<<" "<<"value_1"<<" "<<mode<<" "<<name_2<<" "<<op_2<<" "<<"value_2"<<endl;
-
-    encrypted_query_1.save(myfile);
-    encrypted_query_2.save(myfile);
-//
+    myfile<<"3 "<<n<<" "<<tablename<<" ";
+    for(int i=0; i<n; i++)
+    {
+        myfile<<name[i]<<" ";
+    }
+    
+    
+    myfile<<name_1<<" "<<op_1<<" "<<mode<<" "<<name_2<<" "<<op_2;
     myfile.close();
+
+    ofstream value1;
+  	value1.open ("encrypt/value1.txt");
+    encrypted_query_1.save(value1);
+    value1.close();
+    
+    
+    ofstream value2;
+  	value2.open ("encrypt/value2.txt");
+    encrypted_query_2.save(value2);
+    value2.close();
+
+//
 
 	cout<<"ecrypted and saved to file"<<endl;	
 

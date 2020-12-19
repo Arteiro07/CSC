@@ -142,6 +142,33 @@ exec/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/build
 .PHONY : exec/fast
 
+client.o: client.cpp.o
+
+.PHONY : client.o
+
+# target to build an object file
+client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/client.cpp.o
+.PHONY : client.cpp.o
+
+client.i: client.cpp.i
+
+.PHONY : client.i
+
+# target to preprocess a source file
+client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/client.cpp.i
+.PHONY : client.cpp.i
+
+client.s: client.cpp.s
+
+.PHONY : client.s
+
+# target to generate assembly for a file
+client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/client.cpp.s
+.PHONY : client.cpp.s
+
 create.o: create.cpp.o
 
 .PHONY : create.o
@@ -169,60 +196,6 @@ create.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/create.cpp.s
 .PHONY : create.cpp.s
 
-deletes.o: deletes.cpp.o
-
-.PHONY : deletes.o
-
-# target to build an object file
-deletes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/deletes.cpp.o
-.PHONY : deletes.cpp.o
-
-deletes.i: deletes.cpp.i
-
-.PHONY : deletes.i
-
-# target to preprocess a source file
-deletes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/deletes.cpp.i
-.PHONY : deletes.cpp.i
-
-deletes.s: deletes.cpp.s
-
-.PHONY : deletes.s
-
-# target to generate assembly for a file
-deletes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/deletes.cpp.s
-.PHONY : deletes.cpp.s
-
-example.o: example.cpp.o
-
-.PHONY : example.o
-
-# target to build an object file
-example.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/example.cpp.o
-.PHONY : example.cpp.o
-
-example.i: example.cpp.i
-
-.PHONY : example.i
-
-# target to preprocess a source file
-example.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/example.cpp.i
-.PHONY : example.cpp.i
-
-example.s: example.cpp.s
-
-.PHONY : example.s
-
-# target to generate assembly for a file
-example.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/example.cpp.s
-.PHONY : example.cpp.s
-
 insert.o: insert.cpp.o
 
 .PHONY : insert.o
@@ -249,33 +222,6 @@ insert.s: insert.cpp.s
 insert.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/insert.cpp.s
 .PHONY : insert.cpp.s
-
-multiply.o: multiply.cpp.o
-
-.PHONY : multiply.o
-
-# target to build an object file
-multiply.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/multiply.cpp.o
-.PHONY : multiply.cpp.o
-
-multiply.i: multiply.cpp.i
-
-.PHONY : multiply.i
-
-# target to preprocess a source file
-multiply.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/multiply.cpp.i
-.PHONY : multiply.cpp.i
-
-multiply.s: multiply.cpp.s
-
-.PHONY : multiply.s
-
-# target to generate assembly for a file
-multiply.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/multiply.cpp.s
-.PHONY : multiply.cpp.s
 
 query.o: query.cpp.o
 
@@ -340,21 +286,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... exec"
+	@echo "... client.o"
+	@echo "... client.i"
+	@echo "... client.s"
 	@echo "... create.o"
 	@echo "... create.i"
 	@echo "... create.s"
-	@echo "... deletes.o"
-	@echo "... deletes.i"
-	@echo "... deletes.s"
-	@echo "... example.o"
-	@echo "... example.i"
-	@echo "... example.s"
 	@echo "... insert.o"
 	@echo "... insert.i"
 	@echo "... insert.s"
-	@echo "... multiply.o"
-	@echo "... multiply.i"
-	@echo "... multiply.s"
 	@echo "... query.o"
 	@echo "... query.i"
 	@echo "... query.s"
