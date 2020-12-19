@@ -142,6 +142,33 @@ exec/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/build
 .PHONY : exec/fast
 
+cert.o: cert.cpp.o
+
+.PHONY : cert.o
+
+# target to build an object file
+cert.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/cert.cpp.o
+.PHONY : cert.cpp.o
+
+cert.i: cert.cpp.i
+
+.PHONY : cert.i
+
+# target to preprocess a source file
+cert.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/cert.cpp.i
+.PHONY : cert.cpp.i
+
+cert.s: cert.cpp.s
+
+.PHONY : cert.s
+
+# target to generate assembly for a file
+cert.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/cert.cpp.s
+.PHONY : cert.cpp.s
+
 client.o: client.cpp.o
 
 .PHONY : client.o
@@ -286,6 +313,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... exec"
+	@echo "... cert.o"
+	@echo "... cert.i"
+	@echo "... cert.s"
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"

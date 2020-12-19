@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/user/CSC/CLIENT/cert.cpp
+example.h
+/home/user/CSC/CLIENT/example.h
+
 /home/user/CSC/CLIENT/create.cpp
 example.h
 /home/user/CSC/CLIENT/example.h
@@ -43,10 +47,6 @@ thread
 -
 vector
 -
-
-/home/user/CSC/CLIENT/insert.cpp
-example.h
-/home/user/CSC/CLIENT/example.h
 
 /usr/local/include/SEAL-3.6/gsl/gsl_assert
 intrin.h
