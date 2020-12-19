@@ -10,5 +10,3 @@ class CompaResult;
     void printbin(bool* val_bin);
     
     CompaResult digital_compare(bool* A, bool* B);
-    
-    void client_Install();

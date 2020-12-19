@@ -1,88 +1,79 @@
 #include "database.h"
+#include "parser.cpp"
 
 using namespace std;
 
-int query(int argc, char* argv[]) {
+int query(string filename) {
     sqlite3 *db;
     char *zErrMsg = 0;
     int rc;
+    string fcontent;
     char *sql;
     const char* data = "Query result";
+    int a; //TESTE//
+    //ifstream MyReadFile(filename);
 
     /* Open database */
-    rc = sqlite3_open("test.db", &db);
+    rc = sqlite3_open("databse.db", &db);
 
     if( rc ) {
-        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+        fprintf(stdout, "Can't open database: %s\n", sqlite3_errmsg(db));
         return(0);
     } else {
         fprintf(stdout, "Opened database successfully\n");
     }
 
-    /* Create SQL statement */
-    sql = "CREATE TABLE COMPANY("  \
-        "ID INT PRIMARY KEY     NOT NULL," \
-        "NAME           TEXT    NOT NULL," \
-        "AGE            INT     NOT NULL," \
-        "ADDRESS        CHAR(50)," \
-        "SALARY         REAL );";
-
-    /* Execute SQL statement */
-    rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
-
-    if( rc != SQLITE_OK ){
-        fprintf(stderr, "SQL error: %s\n", zErrMsg);
-        sqlite3_free(zErrMsg);
-    } else {
-        fprintf(stdout, "Table created successfully\n");
-    }
-    sqlite3_close(db);
-    return 0;
-}
-
-int select(int argc, char* argv[]) {
-    sqlite3 *db;
-    char *zErrMsg = 0;
-    int rc;
-    char *sql;
-    const char* data = "Query result";
-
-    /* Open database */
-    rc = sqlite3_open("test.db", &db);
-    
-    if( rc ) {
-        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
-        return(0);
-    } else {
-        fprintf(stderr, "Opened database successfully\n");
+    //fcontent = readFile(filename);
+    fcontent = parser(filename);
+    cout<<fcontent<<endl;
+    if (fcontent.empty()) {
+        cout << "Couldn't open file or content is empty" << endl;
+        return (0);
     }
 
-    /* Create SQL statement */
-    sql = "SELECT * from COMPANY";
+    sql = &fcontent[0];
 
     /* Execute SQL statement */
     rc = sqlite3_exec(db, sql, callback, (void*)data, &zErrMsg);
-   
-    if( rc != SQLITE_OK ) {
-        fprintf(stderr, "SQL error: %s\n", zErrMsg);
+
+    if( rc != SQLITE_OK ){
+        fprintf(stdout, "SQL error: %s\n", zErrMsg);
         sqlite3_free(zErrMsg);
     } else {
-        fprintf(stdout, "Operation done successfully\n");
+        fprintf(stdout, "Query performed successfully\n");
     }
     sqlite3_close(db);
-    return 0;
+    return 1;
+}
+
+string readFile(string fileName) 
+{  
+    ifstream input(fileName); 
+ 
+    if (!input.good()) 
+    { 
+        return("");
+    } 
+ 
+    string line; 
+    getline(input, line);
+    input.seekg(0); 
+    string contents; 
+ 
+    { 
+        ostringstream output; 
+        output << input.rdbuf(); 
+        contents = output.str(); 
+    }
+
+    return contents; 
 }
 
 
-
-static int callback(void *data, int argc, char **argv, char **azColName){
-    int i;
-    fprintf(stderr, "%s: \n\n", (const char*)data);
-
-    for(i = 0; i<argc; i++){
-        printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
-    }
-
-    printf("\n");
-    return 0;
+//TESTING//
+int main() {
+    string filename;
+    cerr << "Introduce filename: ";
+    cin >> filename;
+    query(filename);
 }
