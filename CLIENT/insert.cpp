@@ -81,7 +81,6 @@ void insert( )
         }
         
     }    
-    cout<<"dsa";
 
         Plaintext p_query_0((value[0]));//plaintext query
 	    Plaintext p_query_1((value[1]));
