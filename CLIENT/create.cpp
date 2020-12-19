@@ -5,8 +5,6 @@ using namespace seal;
 
 void create()
 {
-    ofstream myfile;
-  	myfile.open ("/encrypt/encryped.txt");
 
     string statement;
     string type="1 ";
@@ -28,17 +26,23 @@ void create()
                 getline(cin >> std::ws, name[i]);
     }
 
-    statement=type+to_string(n)+" "+tablename+" ";
-
     cout<<"CREATE TABLE "<<tablename<<" (";
-    myfile<<"CREATE TABLE "<<tablename<<" (";
     for(int i=0; i<n; i++)
     {
-
-        cout<<name[i]<<" "<<", ";
-        statement=statement+name[i]+" ";
+        cout<<name[i];
+        if(i < (n-1))
+        {
+            cout<<", ";
+        }
     }
-    cout<<")";
+    cout<<")"<<endl;
 
-    myfile<<statement;
+    ofstream myfile;
+    myfile.open ("encrypt/encrypted.txt");
+    myfile<<"1 "<<n<<" "<<tablename<<" ";
+    for(int i=0; i<n; i++)
+    {
+        myfile<<name[i]+" ";
+    }
+    myfile.close();
 }

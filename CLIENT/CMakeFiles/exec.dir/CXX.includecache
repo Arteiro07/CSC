@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/user/CSC/CLIENT/client.cpp
-example.h
-/home/user/CSC/CLIENT/example.h
-
 /home/user/CSC/CLIENT/create.cpp
 example.h
 /home/user/CSC/CLIENT/example.h
@@ -49,14 +45,6 @@ vector
 -
 
 /home/user/CSC/CLIENT/insert.cpp
-example.h
-/home/user/CSC/CLIENT/example.h
-
-/home/user/CSC/CLIENT/query.cpp
-example.h
-/home/user/CSC/CLIENT/example.h
-
-/home/user/CSC/CLIENT/sum.cpp
 example.h
 /home/user/CSC/CLIENT/example.h
 

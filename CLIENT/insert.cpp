@@ -61,7 +61,9 @@ void insert( )
     {
         cout << name[i];
         if(i < (n-1))
+        {
             cout<<", ";
+        }
     }
     cout<<") VALUES (";
     for(int i = 0; i<n; i++)
@@ -73,8 +75,6 @@ void insert( )
     cout<<')'<<endl;
 
     string aux;
-    cout<<"n:"<<n;
-
   
 	if(n==1)
     {
