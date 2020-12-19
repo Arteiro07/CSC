@@ -8,6 +8,8 @@ void create()
     ofstream myfile;
   	myfile.open ("/encrypt/encryped.txt");
 
+    string statement;
+    string type="1 ";
     string tablename;
     string col1name;
     string aux;
@@ -19,7 +21,6 @@ void create()
     cin>>n;
     
     string name[n];
-    int type[n];
 
     for(int i=0; i<n; i++)
     {
@@ -27,18 +28,17 @@ void create()
                 getline(cin >> std::ws, name[i]);
     }
 
+    statement=type+to_string(n)+" "+tablename+" ";
+
     cout<<"CREATE TABLE "<<tablename<<" (";
     myfile<<"CREATE TABLE "<<tablename<<" (";
     for(int i=0; i<n; i++)
     {
-        cout<<name[i]<<" "<<"INT";
-        myfile<<name[i]<<" "<<"INT";
-        if( i<(n-1))
-        {
-            cout<<",";
-            myfile<<",";
-        }
+
+        cout<<name[i]<<" "<<", ";
+        statement=statement+name[i]+" ";
     }
     cout<<")";
-    myfile<<")";
+
+    myfile<<statement;
 }
