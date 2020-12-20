@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/exec.dir/admin.cpp.o -o newdir/exec  /usr/local/lib/libseal-3.6.a -pthread 

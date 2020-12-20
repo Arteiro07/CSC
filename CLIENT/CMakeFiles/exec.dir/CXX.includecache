@@ -6,15 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/user/CSC/CLIENT/cert.cpp
-example.h
-/home/user/CSC/CLIENT/example.h
-
-/home/user/CSC/CLIENT/create.cpp
-example.h
-/home/user/CSC/CLIENT/example.h
-
-/home/user/CSC/CLIENT/example.h
+/home/user/CSC/CLIENT/client.h
 seal/seal.h
 /home/user/CSC/CLIENT/seal/seal.h
 algorithm
@@ -47,6 +39,10 @@ thread
 -
 vector
 -
+
+/home/user/CSC/CLIENT/insert.cpp
+client.h
+/home/user/CSC/CLIENT/client.h
 
 /usr/local/include/SEAL-3.6/gsl/gsl_assert
 intrin.h

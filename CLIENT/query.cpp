@@ -1,4 +1,4 @@
-#include "example.h"
+#include "client.h"
 
 using namespace std;
 using namespace seal;
@@ -7,7 +7,9 @@ void query( )
 {
 
 ///////////////////////////////////////////////////////////////////////////////////////////SEAL///////////////////////////////////////////////////////////////////////////////////////////
-	EncryptionParameters parms(scheme_type::bfv);
+	ifstream keyfile;
+    keyfile.open("../../client_1/database/database_public_key.txt");
+    EncryptionParameters parms(scheme_type::bfv);
     size_t poly_modulus_degree = 4096;
     parms.set_poly_modulus_degree(poly_modulus_degree);
 //
@@ -16,10 +18,9 @@ void query( )
 	SEALContext context(parms);
 //
 	KeyGenerator keygen(context);
-    SecretKey secret_key = keygen.secret_key();
     PublicKey public_key;
-    keygen.create_public_key(public_key);
-//
+    public_key.load(context, keyfile);
+    keyfile.close();
     Encryptor encryptor(context, public_key);
 
 //

@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/user/GIT/CSC/ADMIN/admin.cpp
+/home/user/CSC/ADMIN/admin.cpp
 admin.h
-/home/user/GIT/CSC/ADMIN/admin.h
+/home/user/CSC/ADMIN/admin.h
 certs.cpp
-/home/user/GIT/CSC/ADMIN/certs.cpp
+/home/user/CSC/ADMIN/certs.cpp
 sealops.cpp
-/home/user/GIT/CSC/ADMIN/sealops.cpp
+/home/user/CSC/ADMIN/sealops.cpp
 
-/home/user/GIT/CSC/ADMIN/admin.h
+/home/user/CSC/ADMIN/admin.h
 algorithm
 -
 chrono
@@ -48,15 +48,15 @@ vector
 string.h
 -
 
-/home/user/GIT/CSC/ADMIN/certs.cpp
+/home/user/CSC/ADMIN/certs.cpp
 admin.h
-/home/user/GIT/CSC/ADMIN/admin.h
+/home/user/CSC/ADMIN/admin.h
 
-/home/user/GIT/CSC/ADMIN/sealops.cpp
+/home/user/CSC/ADMIN/sealops.cpp
 sealops.h
-/home/user/GIT/CSC/ADMIN/sealops.h
+/home/user/CSC/ADMIN/sealops.h
 
-/home/user/GIT/CSC/ADMIN/sealops.h
+/home/user/CSC/ADMIN/sealops.h
 cstddef
 -
 iostream
@@ -70,7 +70,7 @@ vector
 string
 -
 seal/seal.h
-/home/user/GIT/CSC/ADMIN/seal/seal.h
+/home/user/CSC/ADMIN/seal/seal.h
 
 /usr/local/include/SEAL-3.6/gsl/gsl_assert
 intrin.h

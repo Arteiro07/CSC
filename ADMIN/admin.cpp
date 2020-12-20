@@ -16,4 +16,6 @@ int main(int argc, char *argv[]){
     server_CA();
     generate_database_keys();
     client_Install(stoi(argv[1]));
+
+    
 }

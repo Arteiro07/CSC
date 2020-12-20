@@ -26,13 +26,13 @@ find_package(SEAL 3.6.0 EXACT REQUIRED)
 
 
 # TO SET DIFERENT DIRECTORY (e.g. yourdir) [OPTIONAL, BY DEFAULT: PROJECT DIRECTORY]:
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/newdir)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/execs)
 
 # CHOOSE EXECUTABLE NAME (e.g exec)
-add_executable(exec)
+add_executable(run)
 
 # ADD ALL SOURCE FILES TO BE COMPILED (e.g. exec.cpp)
-target_sources(exec 
+target_sources(run 
         PRIVATE
             ${CMAKE_CURRENT_LIST_DIR}/admin.cpp
     	)
@@ -42,4 +42,4 @@ target_sources(exec
 
 
 # LINK SEAL
-target_link_libraries(exec SEAL::seal)
+target_link_libraries(run SEAL::seal)
