@@ -7,7 +7,7 @@ void sum( )
 {
 ///////////////////////////////////////////////////////////////////////////////////////////SEAL///////////////////////////////////////////////////////////////////////////////////////////
 	ifstream keyfile;
-    keyfile.open("../../client_1/database/database_public_key.txt");
+    keyfile.open("../client_1/database/database_public_key.txt");
     EncryptionParameters parms(scheme_type::bfv);
     size_t poly_modulus_degree = 4096;
     parms.set_poly_modulus_degree(poly_modulus_degree);

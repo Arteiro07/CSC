@@ -57,34 +57,34 @@ void client_Install(int n)
     char buffer [256];
     for(int i=1; i<=n; i++)
     {
-        sprintf (buffer, "mkdir ~/client_%d/",i);
+        sprintf (buffer, "mkdir ../client_%d/",i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "mkdir ~/client_%d/CA/",i);
+        sprintf (buffer, "mkdir ../client_%d/CA/",i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "mkdir ~/client_%d/client/",i);
+        sprintf (buffer, "mkdir ../client_%d/client/",i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "mkdir ~/client_%d/server/",i);
+        sprintf (buffer, "mkdir ../client_%d/server/",i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "mkdir ~/client_%d/database/",i);
+        sprintf (buffer, "mkdir ../client_%d/database/",i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "cd CA && cp ca.crt ~/client_%d/CA/",i);
+        sprintf (buffer, "cd CA && cp ca.crt ../../client_%d/CA/",i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "cd client_%d && cp client.crt ~/client_%d/client/",i,i);
+        sprintf (buffer, "cd client_%d && cp client.crt ../../client_%d/client/",i,i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "cd client_%d && cp client.p12 ~/client_%d/client/",i,i);
+        sprintf (buffer, "cd client_%d && cp client.p12 ../../client_%d/client/",i,i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "cd server && cp server.crt ~/client_%d/server/",i);
+        sprintf (buffer, "cd server && cp server.crt ../../client_%d/server/",i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
-        sprintf (buffer, "cd database && cp database_public_key.txt ~/client_%d/database/",i);
+        sprintf (buffer, "cd database && cp database_public_key.txt ../../client_%d/database/",i);
         system(buffer);
         memset(buffer, 0, sizeof(buffer));
     }
