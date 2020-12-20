@@ -6,9 +6,13 @@ using namespace seal;
 
 void sign();
 {
-    //check if the cert is signed by the ca
-    system("openssl dgst -sha256 -verify ../client_1/CA/ca.crt -signature /tmp/sign.sha256 ./client_1/client_1/client.p12");
+    system("openssl x509 -sha256 -days 365 -in ../client_1/client/client.crt -signkey ../client_1/CA/ca.key -out client.pem ");
     system("");
 }
 
 void server_encrypt();
+{
+
+
+
+}
