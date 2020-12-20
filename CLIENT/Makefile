@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named exec
+# Target rules for targets named run
 
 # Build rule for target.
-exec: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 exec
-.PHONY : exec
+run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run
+.PHONY : run
 
 # fast build rule for target.
-exec/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/build
-.PHONY : exec/fast
+run/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+.PHONY : run/fast
 
 cert.o: cert.cpp.o
 
@@ -148,7 +148,7 @@ cert.o: cert.cpp.o
 
 # target to build an object file
 cert.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/cert.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/cert.cpp.o
 .PHONY : cert.cpp.o
 
 cert.i: cert.cpp.i
@@ -157,7 +157,7 @@ cert.i: cert.cpp.i
 
 # target to preprocess a source file
 cert.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/cert.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/cert.cpp.i
 .PHONY : cert.cpp.i
 
 cert.s: cert.cpp.s
@@ -166,7 +166,7 @@ cert.s: cert.cpp.s
 
 # target to generate assembly for a file
 cert.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/cert.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/cert.cpp.s
 .PHONY : cert.cpp.s
 
 client.o: client.cpp.o
@@ -175,7 +175,7 @@ client.o: client.cpp.o
 
 # target to build an object file
 client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/client.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/client.cpp.o
 .PHONY : client.cpp.o
 
 client.i: client.cpp.i
@@ -184,7 +184,7 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -193,7 +193,7 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/client.cpp.s
 .PHONY : client.cpp.s
 
 create.o: create.cpp.o
@@ -202,7 +202,7 @@ create.o: create.cpp.o
 
 # target to build an object file
 create.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/create.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/create.cpp.o
 .PHONY : create.cpp.o
 
 create.i: create.cpp.i
@@ -211,7 +211,7 @@ create.i: create.cpp.i
 
 # target to preprocess a source file
 create.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/create.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/create.cpp.i
 .PHONY : create.cpp.i
 
 create.s: create.cpp.s
@@ -220,7 +220,7 @@ create.s: create.cpp.s
 
 # target to generate assembly for a file
 create.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/create.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/create.cpp.s
 .PHONY : create.cpp.s
 
 insert.o: insert.cpp.o
@@ -229,7 +229,7 @@ insert.o: insert.cpp.o
 
 # target to build an object file
 insert.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/insert.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/insert.cpp.o
 .PHONY : insert.cpp.o
 
 insert.i: insert.cpp.i
@@ -238,7 +238,7 @@ insert.i: insert.cpp.i
 
 # target to preprocess a source file
 insert.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/insert.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/insert.cpp.i
 .PHONY : insert.cpp.i
 
 insert.s: insert.cpp.s
@@ -247,7 +247,7 @@ insert.s: insert.cpp.s
 
 # target to generate assembly for a file
 insert.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/insert.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/insert.cpp.s
 .PHONY : insert.cpp.s
 
 query.o: query.cpp.o
@@ -256,7 +256,7 @@ query.o: query.cpp.o
 
 # target to build an object file
 query.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/query.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/query.cpp.o
 .PHONY : query.cpp.o
 
 query.i: query.cpp.i
@@ -265,7 +265,7 @@ query.i: query.cpp.i
 
 # target to preprocess a source file
 query.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/query.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/query.cpp.i
 .PHONY : query.cpp.i
 
 query.s: query.cpp.s
@@ -274,7 +274,7 @@ query.s: query.cpp.s
 
 # target to generate assembly for a file
 query.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/query.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/query.cpp.s
 .PHONY : query.cpp.s
 
 sum.o: sum.cpp.o
@@ -283,7 +283,7 @@ sum.o: sum.cpp.o
 
 # target to build an object file
 sum.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/sum.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/sum.cpp.o
 .PHONY : sum.cpp.o
 
 sum.i: sum.cpp.i
@@ -292,7 +292,7 @@ sum.i: sum.cpp.i
 
 # target to preprocess a source file
 sum.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/sum.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/sum.cpp.i
 .PHONY : sum.cpp.i
 
 sum.s: sum.cpp.s
@@ -301,7 +301,7 @@ sum.s: sum.cpp.s
 
 # target to generate assembly for a file
 sum.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/sum.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/sum.cpp.s
 .PHONY : sum.cpp.s
 
 # Help Target
@@ -312,7 +312,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... exec"
+	@echo "... run"
 	@echo "... cert.o"
 	@echo "... cert.i"
 	@echo "... cert.s"

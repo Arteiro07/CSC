@@ -9,7 +9,6 @@ int main()
 	//vanila declarations
 	int selection;
 	bool valid;
-	string garbage;
 
 	cout<<"Print the type of query you want to excute:"<<endl;
 	cout<<"0- quit"<<endl;
@@ -62,10 +61,12 @@ int main()
 		return 0;
 	}
 
-	sign();
+
+///NOT done
+	//sign();
 	//Encrypt();
 	cout<<"Wait for response from database, press enter when ready."
-	cin>>garbage;
+	//not done
 
 
 
