@@ -1,4 +1,4 @@
-#include "example.h"
+#include "client.h"
 
 using namespace std;
 using namespace seal;
@@ -7,17 +7,24 @@ void insert( )
 {
 
 ///////////////////////////////////////////////////////////////////////////////////////////SEAL///////////////////////////////////////////////////////////////////////////////////////////
+<<<<<<< HEAD
 	EncryptionParameters parms(scheme_type::bfv);
     size_t poly_modulus_degree = 8192;
+=======
+	ifstream keyfile;
+    keyfile.open("../../client_1/database/database_public_key.txt");
+    EncryptionParameters parms(scheme_type::bfv);
+    size_t poly_modulus_degree = 4096;
+>>>>>>> 88243df5aeaaeaa8f5abac1f6fb83f86ba71ad9d
     parms.set_poly_modulus_degree(poly_modulus_degree);
     parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
     parms.set_plain_modulus(PlainModulus::Batching(poly_modulus_degree, 20));
     auto context = SEALContext(parms);
 //
 	KeyGenerator keygen(context);
-    SecretKey secret_key = keygen.secret_key();
     PublicKey public_key;
-    keygen.create_public_key(public_key);
+    public_key.load(context, keyfile);
+    keyfile.close();
 //
     Encryptor encryptor(context, public_key);
 

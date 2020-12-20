@@ -39,6 +39,7 @@ target_sources(exec
             ${CMAKE_CURRENT_LIST_DIR}/insert.cpp
             ${CMAKE_CURRENT_LIST_DIR}/query.cpp
             ${CMAKE_CURRENT_LIST_DIR}/sum.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/cert.cpp
     	)
 
 # PRIVATE FLAG MAY BE CHANGED FOR PUBLIC OR INTERFACE

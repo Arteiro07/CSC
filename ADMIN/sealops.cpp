@@ -9,11 +9,12 @@ void generate_database_keys(){
 
     // Define contexto e parametros para gerar as chaves
     EncryptionParameters parms(scheme_type::bfv);
-    size_t poly_modulus_degree = 8192;
+    size_t poly_modulus_degree = 4096;
     parms.set_poly_modulus_degree(poly_modulus_degree);
+//
     parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-    parms.set_plain_modulus(PlainModulus::Batching(poly_modulus_degree, 20));
-    auto context = SEALContext(parms);
+	parms.set_plain_modulus(1024);
+	SEALContext context(parms);
 
     // Gerando as chaves
     KeyGenerator keygen(context);

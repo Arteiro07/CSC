@@ -1,4 +1,4 @@
-#include "example.h"
+#include "client.h"
 
 using namespace std;
 using namespace seal;

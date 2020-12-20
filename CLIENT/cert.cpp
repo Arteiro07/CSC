@@ -1,13 +1,9 @@
-#include "example.h"
+#include "client.h"
 
 using namespace std;
 using namespace seal;
 
 
-void verify_client_cert(){
+void sign();
 
-}
-
-void verify_server_cert(){
-    
-}
+void server_encrypt();

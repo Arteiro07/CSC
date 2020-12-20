@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/exec.dir/cert.cpp.o"
   "CMakeFiles/exec.dir/client.cpp.o"
   "CMakeFiles/exec.dir/create.cpp.o"
   "CMakeFiles/exec.dir/insert.cpp.o"

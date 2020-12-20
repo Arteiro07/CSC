@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/run.dir/admin.cpp.o -o execs/run  /usr/local/lib/libseal-3.6.a -pthread 

@@ -1,3 +1,3 @@
-/home/user/GIT/CSC/ADMIN/CMakeFiles/rebuild_cache.dir
-/home/user/GIT/CSC/ADMIN/CMakeFiles/edit_cache.dir
-/home/user/GIT/CSC/ADMIN/CMakeFiles/exec.dir
+/home/user/CSC/ADMIN/CMakeFiles/rebuild_cache.dir
+/home/user/CSC/ADMIN/CMakeFiles/edit_cache.dir
+/home/user/CSC/ADMIN/CMakeFiles/run.dir

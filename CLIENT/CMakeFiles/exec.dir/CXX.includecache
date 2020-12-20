@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/user/CSC/CLIENT/example.h
+=======
+/home/user/CSC/CLIENT/client.h
+>>>>>>> 88243df5aeaaeaa8f5abac1f6fb83f86ba71ad9d
 seal/seal.h
 /home/user/CSC/CLIENT/seal/seal.h
 algorithm
@@ -41,8 +45,8 @@ vector
 -
 
 /home/user/CSC/CLIENT/insert.cpp
-example.h
-/home/user/CSC/CLIENT/example.h
+client.h
+/home/user/CSC/CLIENT/client.h
 
 /usr/local/include/SEAL-3.6/gsl/gsl_assert
 intrin.h
