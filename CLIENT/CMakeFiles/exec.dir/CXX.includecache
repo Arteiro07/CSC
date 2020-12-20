@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/user/CSC/CLIENT/create.cpp
-example.h
-/home/user/CSC/CLIENT/example.h
-
 /home/user/CSC/CLIENT/example.h
 seal/seal.h
 /home/user/CSC/CLIENT/seal/seal.h

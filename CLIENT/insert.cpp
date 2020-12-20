@@ -8,12 +8,11 @@ void insert( )
 
 ///////////////////////////////////////////////////////////////////////////////////////////SEAL///////////////////////////////////////////////////////////////////////////////////////////
 	EncryptionParameters parms(scheme_type::bfv);
-    size_t poly_modulus_degree = 4096;
+    size_t poly_modulus_degree = 8192;
     parms.set_poly_modulus_degree(poly_modulus_degree);
-//
     parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
-	parms.set_plain_modulus(1024);
-	SEALContext context(parms);
+    parms.set_plain_modulus(PlainModulus::Batching(poly_modulus_degree, 20));
+    auto context = SEALContext(parms);
 //
 	KeyGenerator keygen(context);
     SecretKey secret_key = keygen.secret_key();
@@ -162,7 +161,7 @@ void insert( )
 	if(n>=1)
     {   
         ofstream value1;
-        value1.open ("encrypt/value1.txt");
+        value1.open ("encrypt/value1.txt", ios::binary);
         encrypted_query_0.save(value1);
         value1.close(); 
 
@@ -170,7 +169,7 @@ void insert( )
     if(n>=2)
     {
         ofstream value2;
-        value2.open ("encrypt/value2.txt");
+        value2.open ("encrypt/value2.txt", ios::binary);
         encrypted_query_1.save(value2);
         value2.close(); 
 
@@ -178,21 +177,21 @@ void insert( )
     if(n>=3)
     {
         ofstream value3;
-        value3.open ("encrypt/value3.txt");
+        value3.open ("encrypt/value3.txt", ios::binary);
         encrypted_query_2.save(value3);
         value3.close(); 
     }
     if(n>=4)
     {
         ofstream value4;
-        value4.open ("encrypt/value4.txt");
+        value4.open ("encrypt/value4.txt", ios::binary);
         encrypted_query_3.save(value4);
         value4.close();  
     }
     if(n==5)
     {
         ofstream value5;
-        value5.open ("encrypt/value5.txt");
+        value5.open ("encrypt/value5.txt", ios::binary);
         encrypted_query_4.save(value5);
         value5.close();         
     }
