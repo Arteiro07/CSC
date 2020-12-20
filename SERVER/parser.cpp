@@ -1,7 +1,16 @@
 #include "parser.h"
 
 using namespace std;
-  
+
+    /////////////////////////SEAL////////////////////////////////
+    EncryptionParameters parms(scheme_type::bfv);
+    size_t poly_modulus_degree = 4096;
+    parms.set_poly_modulus_degree(poly_modulus_degree);
+    parms.set_coeff_modulus(CoeffModulus::BFVDefault(poly_modulus_degree));
+    parms.set_plain_modulus(1024);
+    SEALContext context(parms);
+    ////////////////////////////////////////////////////////////////
+
 // driver code 
 string parser(string filename)
 { 
@@ -72,6 +81,9 @@ string insert(int n_cols, ifstream &file) {
     string statement;
     string values;
 
+    ifstream value1;
+    ifstream value2;
+
     file>>tablename;
 
     statement = "INSERT INTO " + tablename + " (";
@@ -86,13 +98,21 @@ string insert(int n_cols, ifstream &file) {
     statement=statement+colname+") VALUES (";
     //cout<<statement<<endl; //
 
-    for (int i = 0; i < n_cols-1; i++)
-    {
-        file>>values;
-        statement=statement+values+",";
-    }
-    file>>values;
-    statement=statement+values+");";
+    value1.open("encrypted/value1.txt");
+    Ciphertext val1;
+    val1.load(context,value1);
+
+    value2.open("encrypted/value2.txt");
+    Ciphertext val2;
+    val2.load(context,value2);
+
+    //for (int i = 0; i < n_cols-1; i++)
+    //{
+    //    file>>values;
+    //    statement=statement+values+",";
+    //}
+    //file>>values;
+    //statement=statement+values+");";
     //cout<<statement<<endl;  //
 
     return statement;

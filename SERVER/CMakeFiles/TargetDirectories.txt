@@ -1,0 +1,3 @@
+/home/user/CSC/SERVER/CMakeFiles/rebuild_cache.dir
+/home/user/CSC/SERVER/CMakeFiles/edit_cache.dir
+/home/user/CSC/SERVER/CMakeFiles/exec.dir

@@ -1,8 +1,10 @@
 #include <fstream>
 #include <iostream>
-#include <string> 
+#include <string>
+#include "seal/seal.h"
 
 using namespace std;
+using namespace seal;
 
 string parser(string filename);
 string create(int n_cols, ifstream &file);
