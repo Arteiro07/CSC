@@ -10,7 +10,6 @@ int main()
 	int selection;
 	bool valid;
 
-
 	cout<<"Print the type of query you want to excute:"<<endl;
 	cout<<"0- quit"<<endl;
 	cout<<"1- Create"<<endl;
@@ -62,6 +61,13 @@ int main()
 		return 0;
 	}
 
+
+///NOT done
+	//sign();
 	//Encrypt();
+	cout<<"Wait for response from database, press enter when ready."
+	//not done
+
+
 
 }

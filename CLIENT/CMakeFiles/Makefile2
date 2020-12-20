@@ -72,7 +72,7 @@ CMAKE_BINARY_DIR = /home/user/CSC/CLIENT
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/exec.dir/all
+all: CMakeFiles/run.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/exec.dir/clean
+clean: CMakeFiles/run.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/exec.dir
+# Target rules for target CMakeFiles/run.dir
 
 # All Build rule for target.
-CMakeFiles/exec.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target exec"
-.PHONY : CMakeFiles/exec.dir/all
+CMakeFiles/run.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/CSC/CLIENT/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target run"
+.PHONY : CMakeFiles/run.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/exec.dir/rule: cmake_check_build_system
+CMakeFiles/run.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CSC/CLIENT/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/exec.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/CSC/CLIENT/CMakeFiles 0
-.PHONY : CMakeFiles/exec.dir/rule
+.PHONY : CMakeFiles/run.dir/rule
 
 # Convenience name for target.
-exec: CMakeFiles/exec.dir/rule
+run: CMakeFiles/run.dir/rule
 
-.PHONY : exec
+.PHONY : run
 
 # clean rule for target.
-CMakeFiles/exec.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/exec.dir/build.make CMakeFiles/exec.dir/clean
-.PHONY : CMakeFiles/exec.dir/clean
+CMakeFiles/run.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/clean
+.PHONY : CMakeFiles/run.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

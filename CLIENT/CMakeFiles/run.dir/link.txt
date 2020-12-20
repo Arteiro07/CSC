@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/run.dir/client.cpp.o CMakeFiles/run.dir/create.cpp.o CMakeFiles/run.dir/insert.cpp.o CMakeFiles/run.dir/query.cpp.o CMakeFiles/run.dir/sum.cpp.o CMakeFiles/run.dir/cert.cpp.o -o execs/run  /usr/local/lib/libseal-3.6.a -pthread 
